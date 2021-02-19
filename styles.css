@@ -38,6 +38,10 @@ body {
   width: 100vw !important;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   height: 100vh;
   background-color: rgb(43, 44, 45);
