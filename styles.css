@@ -1,0 +1,173 @@
+@media screen and (min-width: 769px) {
+  .project-button {
+    font-size: 1em !important;
+  }
+
+  .project {
+    margin-top: 10vh !important;
+    padding-bottom: 10vh !important;
+  }
+
+  header .contact-icons {
+    top: 15% !important;
+    left: 12.5% !important;
+    transform: translate(0) !important;
+  }
+
+  header .title-box .title {
+    font-size: 4rem !important;
+  }
+
+  header .title-box .subtitle {
+    font-size: 2rem !important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw !important;
+}
+
+header {
+  height: 100vh;
+  background-color: rgb(43, 44, 45);
+  position: relative;
+  clip-path: polygon(29% 0, 71% 0, 100% 0, 100% 82%, 36% 100%, 0 100%, 0 0);
+}
+
+header .contact-icons {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: grey;
+}
+
+header .contact-icons i {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+header .contact-icons i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+header .title-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  color: grey;
+}
+
+header .title-box .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+header .title-box .subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15vh;
+  letter-spacing: 1px;
+}
+
+.project {
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.514);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 1.35em;
+}
+
+.project-image {
+  border: 1px solid rgba(0, 0, 0, 0.432);
+  border-radius: 5px;
+}
+
+.project-info {
+  line-height: 1.75rem;
+}
+
+.project-content .project-info__title {
+  font-weight: 700;
+}
+
+.tag {
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.project-button {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.project-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.button-demo {
+  border: 1px solid rgb(43, 44, 45);
+  color: rgb(43, 44, 45);
+}
+
+.button-github {
+  border: 1px solid rgb(32, 180, 19);
+  color: rgb(34, 175, 21);
+}
+
+footer {
+  position: relative;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(43, 44, 45);
+}
+
+footer .contact-icons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+}
+
+footer .contact-icons i {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: grey;
+}
+
+footer .contact-icons i:hover {
+  color: white;
+}
