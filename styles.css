@@ -75,6 +75,15 @@ header {
   clip-path: polygon(29% 0, 71% 0, 100% 0, 100% 82%, 36% 100%, 0 100%, 0 0);
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  top: -500px;
+  height: 500px;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
 header .contact-icons {
   position: absolute;
   top: 10%;
@@ -199,6 +208,15 @@ footer {
   position: relative;
   width: 100vw;
   height: 20vh;
+  background-color: var(--main-color);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 500px;
+  width: 100%;
   background-color: var(--main-color);
 }
 
