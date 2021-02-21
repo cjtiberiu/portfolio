@@ -10,7 +10,7 @@ $(document).ready(function() {
             image: './assets/teamsgenerator.png',
             title: 'RANDOM TEAMS GENERATOR',
             language: 'Javascript',
-            frameworks: ['none'],
+            frameworks: [],
             db: '',
             type: 'Personal Project',
             description: 'Add players and generate random teams with multiple options. First javascript project.',
@@ -24,7 +24,7 @@ $(document).ready(function() {
             image: './assets/budgetapp-frontend.png',
             title: 'JS - BUDGET APP',
             language: 'Javascript',
-            frameworks: ['none'],
+            frameworks: [],
             db: '',
             type: 'Personal Project',
             description: 'Add income and expenses. Local storage saved data.',
@@ -147,14 +147,14 @@ $(document).ready(function() {
                             <span class='project-info__title'>Language:</span>
                             ${project.language}
                         </div>
-                        ${project.frameworks ? (
+                        ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
                                 <span class='project-info__title'>Main Framworks/Libraries: </span>
                                 ${project.frameworks.map(el => ` ${el}`)}
                             </div>
                             `
-                        ) : ''}
+                        ) : 'No frameworks/libraries used'}
                         
                         ${project.state ? (
                             `
@@ -189,14 +189,14 @@ $(document).ready(function() {
                             <span class='project-info__title'>Language:</span>
                             ${project.language}
                         </div>
-                        ${project.frameworks ? (
+                        ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
                                 <span class='project-info__title'>Main Framworks/Libraries:</span>
                                 ${project.frameworks.map(el => ` ${el}`)}
                             </div>
                             `
-                        ) : ''}
+                        ) : 'No frameworks/libraries used'}
                         
                         ${project.state ? (
                             `
@@ -243,7 +243,7 @@ $(document).ready(function() {
     const renderMobileProject = (project) => {
 
         const html = `
-        <div class='project' data-aos=${leftRender ? 'fade-right' : 'fade-left'}>
+        <div class='project' data-aos=${leftRender ? 'fade-up' : 'fade-up'}>
             <div class='container'>
                 <div class='row'>
                     <div class='project-title col-md-12'>${project.title}</div>
