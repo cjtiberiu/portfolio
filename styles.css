@@ -7,6 +7,14 @@
     font-size: 1em !important;
   }
 
+  section {
+    padding-top: 10vh !important;
+  }
+
+  .projects-title {
+    font-size: 2.25em !important;
+  }
+
   .project {
     margin-top: 10vh !important;
     padding-bottom: 10vh !important;
@@ -39,29 +47,21 @@ html {
   background-color: var(--main-color);
 }
 
-html:before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 1000px;
-  top: -1000px;
-  background-color: var(--main-color);
-}
-
-html:after {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 500px;
-  top: 100%;
-  background-color: var(--main-color);
-}
-
 body {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100vw !important;
   max-width: 100vw !important;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -500px;
+  height: 999%;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
 }
 
 ::-webkit-scrollbar {
@@ -81,11 +81,13 @@ header .contact-icons {
   left: 50%;
   transform: translate(-50%, -40%);
   color: grey;
+  z-index: 5;
 }
 
 header .contact-icons i {
   margin-left: 10px;
   font-size: 2rem;
+  z-index: 5;
 }
 
 header .contact-icons i:hover {
@@ -99,6 +101,7 @@ header .title-box {
   top: 50%;
   transform: translate(-50%, -70%);
   color: grey;
+  z-index: 5;
 }
 
 header .title-box .title {
@@ -114,9 +117,22 @@ header .title-box .subtitle {
 
 section {
   font-family: "Open Sans", sans-serif;
-  margin-top: 15vh;
+  padding-top: 7vh;
   letter-spacing: 1px;
   background-color: white;
+}
+
+.projects-title {
+  text-align: center;
+  display: inline-block;
+  border-bottom: 4px solid var(--main-color);
+  border-left: 4px solid var(--main-color);
+  /* border-right: 4px solid var(--main-color); */
+  padding: 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: auto;
 }
 
 .project {
