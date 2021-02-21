@@ -3,6 +3,9 @@
 }
 
 @media screen and (min-width: 769px) {
+  body {
+    background-color: white !important;
+  }
   .project-button {
     font-size: 1em !important;
   }
@@ -52,6 +55,7 @@ body {
   overflow-y: scroll;
   width: 100vw !important;
   max-width: 100vw !important;
+  background-color: var(--main-color);
 }
 
 ::-webkit-scrollbar {
@@ -63,15 +67,6 @@ header {
   background-color: var(--main-color);
   position: relative;
   clip-path: polygon(29% 0, 71% 0, 100% 0, 100% 82%, 36% 100%, 0 100%, 0 0);
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: -500px;
-  height: 500px;
-  width: 100%;
-  background-color: var(--main-color);
 }
 
 header .contact-icons {
@@ -124,8 +119,9 @@ section {
 .projects-title {
   text-align: center;
   display: inline-block;
-  border-bottom: 4px solid var(--main-color);
-  border-left: 4px solid var(--main-color);
+  border-bottom: 4px solid rgba(43, 44, 45, 0.25);
+  border-left: 4px solid rgba(43, 44, 45, 0.25);
+  font-weight: 700;
   /* border-right: 4px solid var(--main-color); */
   padding: 5px;
   font-size: 2em;
@@ -168,6 +164,7 @@ section {
   margin-left: 10px;
   border-radius: 5px;
   font-size: 1.2em;
+  font-weight: 700;
 }
 
 a {
@@ -190,23 +187,14 @@ a:hover {
 }
 
 .button-github {
-  border: 1px solid rgb(32, 180, 19);
-  color: rgb(34, 175, 21);
+  border: 1px solid rgb(42, 116, 35);
+  color: rgb(42, 116, 35);
 }
 
 footer {
   position: relative;
   width: 100vw;
   height: 20vh;
-  background-color: var(--main-color);
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  height: 500px;
-  width: 100%;
   background-color: var(--main-color);
 }
 
