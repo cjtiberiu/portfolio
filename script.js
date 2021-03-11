@@ -28,7 +28,7 @@ $(document).ready(function() {
             db: '',
             type: 'Personal Project',
             description: 'Add income and expenses. Local storage saved data.',
-            tags: ['Javascript learning course project', 'Local Storage Save', 'Add income / expenses'],
+            tags: ['Javascript learning course project', 'Local Storage Save', 'Add income/expenses'],
             demo: 'https://cjtiberiu.github.io/budgetapp-frontend/',
             github: 'https://github.com/cjtiberiu/budgetapp-frontend',
             
