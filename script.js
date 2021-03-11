@@ -101,7 +101,7 @@ $(document).ready(function() {
             db: 'Mongo DB',
             type: 'Personal Training Project',
             description: 'Fullstack project with authentication and CRUD operations. Add income and expenses in multiple currencies to control budget.',
-            tags: ['React', 'Express', 'Redux', 'Redux-thunk', 'Authentication','MongoDB', 'Mongoose', 'REST API', 'DB Filtering', 'jsonwebtoken', 'Currency Exchange API', 'Axios', , 'Responsive', 'Styled Components', 'Bootstrap', 'Semantic UI'],
+            tags: ['React', 'Express', 'Redux', 'Redux-thunk', 'Authentication','MongoDB', 'Mongoose', 'REST API', 'DB Filtering', 'jsonwebtoken', 'React Date-Picker', 'Currency Exchange API', 'Axios', , 'Responsive', 'Styled Components', 'Bootstrap', 'Semantic UI'],
             demo: 'https://budgetapp0402.herokuapp.com/',
             github: 'https://github.com/cjtiberiu/budget-app',
             
@@ -116,9 +116,24 @@ $(document).ready(function() {
             db: 'MongoDB',
             type: 'Personal Project',
             description: 'MERN app with firebase auth and mongodb storage. Admin dashboard with CRUD operations',
-            tags: ['React', 'Express', 'Redux', 'MongoDB', 'Mongoose', 'Firebase', 'Admin / User Dashboard', 'REST API', 'Admin CRUD operations', 'Client-side / Server-side protected routes', 'Filtering', 'Cart functionality', 'Wishlist functionality', 'Cloudinary', 'Axios', 'React Image File Resizer', 'React Lazy + Suspense', 'Error Boundary', 'jsonwebtoken', 'Responsive', 'Styled Components', 'Bootstrap', 'Ant Design'],
+            tags: ['React', 'Express', 'Redux', 'MongoDB', 'Mongoose', 'Firebase', 'Admin / User Dashboard', 'REST API', 'Admin CRUD operations', 'Client-side/Server-side protected routes', 'Filtering', 'Cart functionality', 'Wishlist functionality', 'Cloudinary', 'Axios', 'React Image File Resizer', 'React Lazy + Suspense', 'Error Boundary', 'jsonwebtoken', 'Responsive', 'Styled Components', 'Bootstrap', 'Ant Design'],
             demo: 'https://ecommerce030221.herokuapp.com/',
             github: 'https://github.com/cjtiberiu/mern-ecommerce',
+            
+        },
+        {
+            id: 9,
+            image: './assets/chatapp.png',
+            title: 'CHAT APP',
+            language: 'Javascript',
+            frameworks: ['ReactJS',  'Express.js', 'Socket.io'],
+            state: 'Redux',
+            db: 'PostgreSQL',
+            type: 'Personal Project',
+            description: 'Simple chat app made using socket.io and PostgreSQL',
+            tags: ['React', 'Express', 'Redux', 'PostgreSQL', 'Sequelize', 'username authentication', 'jsonwebtoken', 'REST API', 'CRUD operations', 'Client-side/Server-side protected routes', 'Client-side/Server-side separate deployment', 'Axios', 'socket.io events', 'group chat functionality', 'Images server upload', 'responsive',],
+            demo: 'https://chatapp-clientside.herokuapp.com/',
+            github: 'https://github.com/cjtiberiu/chat-app',
             
         },
         
@@ -150,8 +165,8 @@ $(document).ready(function() {
                         ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
-                                <span class='project-info__title'>Main Framworks/Libraries: </span>
-                                ${project.frameworks.map(el => ` ${el}`)}
+                                <span class='project-info__title'>Main Framworks/Libraries:</span>
+                                <span class='project-info__details'>${project.frameworks.map(el => ` ${el}`)}</span>
                             </div>
                             `
                         ) : 'No frameworks/libraries used'}
@@ -176,7 +191,7 @@ $(document).ready(function() {
                     
                         <div class='project-tags d-flex flex-wrap justify-content-start mt-3'>
                             ${project.tags.map(el => {
-                                return `<div class='tag badge badge-pill bg-secondary'>${el}</div>`
+                                return `<div class='tag badge badge-pill bg-secondary'>${el.toLowerCase()}</div>`
                             }).join('')}
                         </div>
                     </div>
@@ -192,8 +207,8 @@ $(document).ready(function() {
                         ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
-                                <span class='project-info__title'>Main Framworks/Libraries:</span>
-                                ${project.frameworks.map(el => ` ${el}`)}
+                                <span class='project-info__title'>Main Framworks/Libraries: </span>
+                                <span class='project-info__details'>${project.frameworks.map(el => ` ${el}`)}</span>
                             </div>
                             `
                         ) : 'No frameworks/libraries used'}
@@ -218,7 +233,7 @@ $(document).ready(function() {
 
                         <div class='project-tags d-flex flex-wrap justify-content-start mt-3'>
                             ${project.tags.map(el => {
-                                return `<div class=' tag badge badge-pill bg-secondary'>${el}</div>`
+                                return `<div class=' tag badge badge-pill bg-secondary'>${el.toLowerCase()}</div>`
                             }).join('')}
                         </div>
                     </div>
@@ -259,7 +274,7 @@ $(document).ready(function() {
                         </div>
                         ${project.frameworks.length > 0 ? (
                             `
-                            <div class='project-info d-flex flex-column'>
+                            <div class='project-info d-flex'>
                                 <span class='project-info__title'>Main Framworks/Libraries:</span>
                                 ${project.frameworks.map(el => ` ${el}`)}
                             </div>
@@ -286,7 +301,7 @@ $(document).ready(function() {
 
                         <div class='project-tags d-flex flex-wrap'>
                             ${project.tags.map(el => {
-                                return `<div class=' tag badge badge-pill bg-secondary'>${el}</div>`
+                                return `<div class=' tag badge badge-pill bg-secondary'>${el.toLowerCase()}</div>`
                             }).join('')}
                         </div>
                     </div>
