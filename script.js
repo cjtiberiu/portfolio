@@ -96,7 +96,7 @@ $(document).ready(function() {
             image: './assets/budgetapp.png',
             title: 'MERN - BUDGET APP',
             language: 'Javascript',
-            frameworks: ['ReactJS', 'Express.js'],
+            frameworks: ['ReactJS', 'Redux', 'Express.js'],
             state: 'Redux',
             db: 'Mongo DB',
             type: 'Personal Training Project',
@@ -111,7 +111,7 @@ $(document).ready(function() {
             image: './assets/ecomm.png',
             title: 'MERN - ECOMMERCE APP',
             language: 'Javascript',
-            frameworks: ['ReactJS',  'Express.js'],
+            frameworks: ['ReactJS', 'Redux',  'Express.js'],
             state: 'Redux',
             db: 'MongoDB',
             type: 'Personal Project',
@@ -126,7 +126,7 @@ $(document).ready(function() {
             image: './assets/chatapp.png',
             title: 'CHAT APP',
             language: 'Javascript',
-            frameworks: ['ReactJS',  'Express.js', 'Socket.io'],
+            frameworks: ['ReactJS', 'Redux',  'Express.js', 'Socket.io'],
             state: 'Redux',
             db: 'PostgreSQL',
             type: 'Personal Project',
@@ -165,7 +165,7 @@ $(document).ready(function() {
                         ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
-                                <span class='project-info__title'>Main Framworks/Libraries:</span>
+                                <span class='project-info__title'>Main Frameworks/Libraries:</span>
                                 <span class='project-info__details'>${project.frameworks.map(el => ` ${el}`)}</span>
                             </div>
                             `
@@ -207,7 +207,7 @@ $(document).ready(function() {
                         ${project.frameworks.length > 0 ? (
                             `
                             <div class='project-info d-flex'>
-                                <span class='project-info__title'>Main Framworks/Libraries: </span>
+                                <span class='project-info__title'>Main Frameworks/Libraries: </span>
                                 <span class='project-info__details'>${project.frameworks.map(el => ` ${el}`)}</span>
                             </div>
                             `
@@ -274,8 +274,8 @@ $(document).ready(function() {
                         </div>
                         ${project.frameworks.length > 0 ? (
                             `
-                            <div class='project-info d-flex'>
-                                <span class='project-info__title'>Main Framworks/Libraries:</span>
+                            <div class='project-info d-flex flex-column'>
+                                <span class='project-info__title'>Main Frameworks/Libraries:</span>
                                 ${project.frameworks.map(el => ` ${el}`)}
                             </div>
                             `
