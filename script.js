@@ -116,7 +116,7 @@ $(document).ready(function() {
             db: 'MongoDB',
             type: 'Personal Project',
             description: 'MERN app with firebase auth and mongodb storage. Admin dashboard with CRUD operations',
-            tags: ['React', 'Express', 'Redux', 'MongoDB', 'Mongoose', 'Firebase', 'Admin / User Dashboard', 'REST API', 'Admin CRUD operations', 'Client-side/Server-side protected routes', 'Filtering', 'Cart functionality', 'Wishlist functionality', 'Cloudinary', 'Axios', 'React Image File Resizer', 'React Lazy + Suspense', 'Error Boundary', 'jsonwebtoken', 'Responsive', 'Styled Components', 'Bootstrap', 'Ant Design'],
+            tags: ['React', 'Express', 'Redux', 'MongoDB', 'Mongoose', 'Firebase', 'Admin / User Dashboard', 'REST API', 'Admin CRUD operations', 'Client-side/Server-side protected routes', 'middlewares', 'error handling', 'Filtering', 'Cart functionality', 'Wishlist functionality', 'Cloudinary', 'Axios', 'React Image File Resizer', 'React Lazy + Suspense', 'Error Boundary', 'jsonwebtoken', 'Responsive', 'Styled Components', 'Bootstrap', 'Ant Design'],
             demo: 'https://ecommerce030221.herokuapp.com/',
             github: 'https://github.com/cjtiberiu/mern-ecommerce',
             
@@ -131,7 +131,7 @@ $(document).ready(function() {
             db: 'PostgreSQL',
             type: 'Personal Project',
             description: 'Simple chat app made using socket.io and PostgreSQL',
-            tags: ['React', 'Express', 'Redux', 'PostgreSQL', 'Sequelize', 'username authentication', 'jsonwebtoken', 'REST API', 'CRUD operations', 'Client-side/Server-side protected routes', 'Client-side/Server-side separate deployment', 'Axios', 'socket.io events', 'group chat functionality', 'Images server upload', 'responsive',],
+            tags: ['React', 'Express', 'Redux', 'PostgreSQL', 'Sequelize', 'username authentication', 'jsonwebtoken', 'REST API', 'CRUD operations', 'Client-side/Server-side protected routes', 'Client-side/Server-side separate deployment', 'Axios', 'socket.io events', 'middlewares', 'error handling', 'group chat functionality', 'Images server upload', 'responsive',],
             demo: 'https://chatapp-clientside.herokuapp.com/',
             github: 'https://github.com/cjtiberiu/chat-app',
             
