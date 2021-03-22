@@ -74,7 +74,7 @@ $(document).ready(function() {
             description: 'Add players and generate random teams with multiple options. First RN project.',
             tags: ['React Native', ,'React Context', 'React Paper Design'],
             github: 'https://github.com/cjtiberiu/RN-randomPlayers',
-            
+            demo: 'https://expo.io/@ctiberiu4/projects/TeamsGenerator'
         },
         {
             id: 6,
@@ -109,7 +109,7 @@ $(document).ready(function() {
         {
             id: 8,
             image: './assets/typescript.jpg',
-            title: 'BASIC REDUX + TYPESCRIPT SETUP',
+            title: 'BASIC REACT + REDUX + TYPESCRIPT SETUP',
             language: 'TypeScript',
             frameworks: ['ReactJS', 'Redux'],
             state: 'Redux',
