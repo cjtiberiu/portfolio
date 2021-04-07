@@ -78,21 +78,6 @@ $(document).ready(function() {
         },
         {
             id: 6,
-            image: './assets/gamespot.png',
-            title: 'REACT - GAMES DB',
-            language: 'JavaScript',
-            frameworks: ['ReactJS'],
-            state: 'Context API',
-            db: 'RAWG API',
-            type: 'Personal Project',
-            description: 'SPA made using RAWG API. Frontend filtering with multiple options.',
-            tags: ['React', 'RAWG API', 'React Context', 'REST API', 'Frontend Filtering', 'Modal', 'Responsive'],
-            demo: 'https://vgamesdb-11f0c.web.app/',
-            github: 'https://github.com/cjtiberiu/gamespot',
-            
-        },
-        {
-            id: 7,
             image: './assets/budgetapp.png',
             title: 'MERN - BUDGET APP',
             language: 'JavaScript',
@@ -107,7 +92,7 @@ $(document).ready(function() {
             
         },
         {
-            id: 8,
+            id: 7,
             image: './assets/typescript.jpg',
             title: 'BASIC REACT + REDUX + TYPESCRIPT SETUP',
             language: 'TypeScript',
@@ -118,6 +103,21 @@ $(document).ready(function() {
             description: '',
             tags: ['React', 'Redux', 'Typescript'],
             github: 'https://github.com/cjtiberiu/redux-ts',
+            
+        },
+        {
+            id: 8,
+            image: './assets/gamespot.png',
+            title: 'REACT - GAMES DB',
+            language: 'JavaScript',
+            frameworks: ['ReactJS'],
+            state: 'Context API',
+            db: 'RAWG API',
+            type: 'Personal Project',
+            description: 'SPA made using RAWG API. Frontend filtering with multiple options.',
+            tags: ['React', 'RAWG API', 'React Context', 'REST API', 'Frontend Filtering', 'Modal', 'Responsive'],
+            demo: 'https://vgamesdb-11f0c.web.app/',
+            github: 'https://github.com/cjtiberiu/gamespot',
             
         },
         {
@@ -145,7 +145,7 @@ $(document).ready(function() {
             db: 'PostgreSQL',
             type: 'Personal Project',
             description: 'Simple chat app made using socket.io and PostgreSQL',
-            tags: ['React', 'Express', 'Redux', 'PostgreSQL', 'Sequelize', 'username authentication', 'jsonwebtoken', 'REST API', 'CRUD operations', 'Client-side/Server-side protected routes', 'Client-side/Server-side separate deployment', 'Axios', 'socket.io events', 'middlewares', 'error handling', 'group chat functionality', 'Images server upload', 'responsive',],
+            tags: ['React', 'Express', 'Redux', 'PostgreSQL', 'Sequelize', 'username authentication', 'jsonwebtoken', 'REST API', 'CRUD operations', 'Client-side/Server-side protected routes', 'Client-side/Server-side separate deployment', 'Axios', 'socket.io events', 'middlewares', 'error handling', 'group chat functionality', 'Images server upload'],
             demo: 'https://chatapp-clientside.herokuapp.com/',
             github: 'https://github.com/cjtiberiu/chat-app',
             
